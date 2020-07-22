@@ -23,6 +23,8 @@ require xyz_next_state() to be called multiple times.
 * __bus.c  & bus.h__  : The definition of the CPU's external bus
 * __term.c & term.h__ : Helper functions to create a UART to the console
 
+![System diagram](systems_diagram.png)
+
 ## Running
 
 Just run ./sim with the name of the file that has the memory contents.
