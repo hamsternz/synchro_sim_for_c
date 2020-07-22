@@ -23,7 +23,7 @@ require xyz_next_state() to be called multiple times.
 * __bus.c  & bus.h__  : The definition of the CPU's external bus
 * __term.c & term.h__ : Helper functions to create a UART to the console
 
-![System diagram](systems_diagram.png)
+![System diagram](/system_diagram.png)
 
 ## Running
 
