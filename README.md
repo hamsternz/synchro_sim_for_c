@@ -14,14 +14,14 @@ require xyz_next_state() to be called multiple times.
 
 ## Components are:
 
-Makefile        : The make file
-main.c          : Top level design
-config.h        : Configuration macros
-io.c   & io.h   : An I/O device - currently just a RX/TX UART
-mem.c  & mem.h  : A memory device - contents is loaded on startup
-cpu.c  & cpu.h  : Where the CPU logic goes
-bus.c  & bus.h  : The definition of the CPU's external bus
-term.c & term.h : Helper functions to create a UART to the console
+* __Makefile__        : The make file
+* __main.c__          : Top level design
+* __config.h__        : Configuration macros
+* __io.c   & io.h__   : An I/O device - currently just a RX/TX UART
+* __mem.c  & mem.h__  : A memory device - contents is loaded on startup
+* __cpu.c  & cpu.h__  : Where the CPU logic goes
+* __bus.c  & bus.h__  : The definition of the CPU's external bus
+* __term.c & term.h__ : Helper functions to create a UART to the console
 
 ## Running
 
