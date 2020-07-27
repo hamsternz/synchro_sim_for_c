@@ -1,5 +1,11 @@
 COPTS=-Wall -pedantic -O4
 
+all : sim code
+	./sim code
+
+code : buildcode.sh
+	bash ./buildcode.sh
+
 sim : main.o mem.o bus.o io.o cpu.o term.o
 	gcc -o sim main.o mem.o bus.o io.o cpu.o term.o
 

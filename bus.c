@@ -5,8 +5,8 @@
 
 uint32_t bus_valid;
 uint32_t bus_addr;
-uint32_t bus_data_in;
-uint32_t bus_data_out;
+uint8_t bus_data_in;
+uint8_t bus_data_out;
 uint32_t bus_write_enable;
 uint32_t bus_mem_select;
 uint32_t bus_io_select;

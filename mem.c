@@ -8,7 +8,7 @@
 // Size in 32-bit words
 #define MEM_SIZE 1024  
 
-static uint32_t data[MEM_SIZE];
+static uint8_t data[MEM_SIZE];
 static int debug;
 
 int mem_load(char *filename) {
@@ -22,8 +22,7 @@ int mem_load(char *filename) {
       return 0;
    }
 
-// n_read = fread(data, sizeof(uint32_t), MEM_SIZE, f);
-   n_read = fread(data, 1, sizeof(data), f);
+   n_read = fread(data, sizeof(uint8_t), sizeof(data)/sizeof(uint8_t), f);
    fclose(f);
 
    if(n_read == 0) {
